@@ -1,0 +1,14 @@
+This question requires no programming.
+Solution license: MIT
+
+Q. Find the difference between the sum of the squares of the first one hundred
+    natural numbers and the square of the sum.
+
+This requires an evaluation of a simple formula:
+
+    (sum_of_numbers)^2 - (sum_of_squares)
+
+sum_of_numbers(n) = n * (n+1) / 2
+sum_of_squares(n) =  n * (n+1) * (2n+1) / 6
+
+Evaluating the formula for 100 equals 25164150.

@@ -1,0 +1,32 @@
+This question requires no programming.
+Solution license: MIT
+
+Q. What is the smallest positive number that is evenly divisible by all of
+    the numbers from 1 to 20?
+
+The simple solution for this is to break each number down into its prime 
+    factors, and then note each time a new prime factor appears, then multiply 
+    those prime factors to get the result.
+
+1 excluded.
+2 = 2               [2]
+3 = 3               [2,3]
+4 = 2 * 2           [2,3]
+5 = 5               [2,3,5]
+6 = 2 * 3           [2,3,5]
+7 = 7               [2,3,5,7]
+8 = 2 * 2 * 2       [2,3,5,7]
+9 = 3 * 3           [2,3,5,7]
+10 = 2 * 5          [2,3,5,7]
+11 = 11             [2,3,5,7,11]
+12 = 2 * 2 * 3      [2,3,5,7,11] 
+13 = 13             [2,3,5,7,11,13]
+14 = 2 * 7          [2,3,5,7,11,13]
+15 = 3 * 5          [2,3,5,7,11,13]
+16 = 2 * 2 * 2 * 2  [2,3,5,7,11,13]
+17 = 17             [2,3,5,7,11,13,17]
+18 = 2 * 3 * 3      [2,3,5,7,11,13,17]
+19 = 19             [2,3,5,7,11,13,17,19]
+20 = 2 * 2 * 5      [2,3,5,7,11,13,17,19]
+
+2 * 3 * 5 * 7 * 11 * 13 * 17 * 19 = 570570
