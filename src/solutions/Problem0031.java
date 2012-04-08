@@ -17,10 +17,10 @@ public class Problem0031 {
     }
     
     private static int countCombination(int v, int d){
-        if (v == 0)
+        if (v == 0) //a sucessful combination has been found
             return 1;
         
-        if (d == -1)
+        if (d == -1) // as the combination goes from largest to smallest, there are no more coins left.
             return 0;
             
         int count = 0;
